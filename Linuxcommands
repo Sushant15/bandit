@@ -1,0 +1,87 @@
+ssh username@ipadressORurl -p PORT [to login]
+ls 							[to list directories]
+cat 							[to read text file]
+ctrl d 							[to close ssh connection]
+
+command ./- 						[to execute "-" file]
+
+command spaces/ in/ this /filename 			[to execute a filename with spaces]
+
+ls -a 							[list hidden files]
+
+file filename 						[determine the type of file]
+file * 							[determine the type of each file in current directory]
+file dirname/* 						[determine the type of each file in the  "dirname" directory ]
+
+file dirname/*/* 					[determine the type of each file upto 2levels in the  "dirname" directory ]
+
+find -size 1033c 					[finds the file with 1033bytes size]
+
+find / -user userowner -group groupowner -size 33c 	["/" used to find in all directories from root folder, user owner and group owner defined]
+
+grep -i pattern filename 				[prints the lines in file "filename" containing word "pattern" anywhere in the line]
+
+sort filename | uniq -u 				[sort arranges the data in file "filename", "|" sends output to next command or program without saving, uniq -u prints the uniques line in the input received]
+
+strings filename | grep -i ^pattern 			[strings print the human readable characters in file, ^ states that the line starts with "pattern"]
+
+base64 -d filename 					[decodes the base64 code in file "filename"]
+
+cat filename | tr [a-zA-Z] [n-za-mN-ZA-M]		[transtlate the characters from [set1] to [set2] ]
+
+mkdir /PATH/dir						[make a new directory "dir" in path "PATH"]
+cp filename filepath					[cp the dile "filename" to the path "filepath"]
+cat filename1 | xxd -r >filename2			[reverses hexdump input from file "filename1"and saves to file "filename2"]
+mv file1 file2						[renames the the "file1" to "file2"]
+bzip2 -d filename.bz2					[decompress bzip2 file]
+gzip -d filename.gz					[decomress the gzip file with gz extension]
+tar -xf file.tar.gz					[decompress the tar file with tar.gz extension]
+
+scp -P 2220 username@serverurl:/PATH/file1 dir		[copies the file "file1" from server "serverurl" username "username" port 2220 and path "PATH"]
+chmod -rw file						[removed read write permission from file  "file"]
+ssh -i pkey uname@server -p 2220 			[ssh login using private key file "pkey"]
+
+telnet localhost 30000					[used to communicate with remote or local host with port]
+
+openssl s_client -quiet -connect host:port		[conect host:port in ssl connection to communicate]
+
+nmap -p 1-65535 url/ip					[scan the open port on ip/url]
+
+echo text | command					[to enter "text" after executing "command"]
+
+grep -Fvf file1 file2					[-F  makes grep do fixed-string match, -v  invert matching, -f  get patterns from file]
+
+ssh username@url -p 1111 -t command			[execute command directly with ssh connection]
+
+./binaryfile command path				[execute the binary file ]
+
+echo text | nc -l -p 3450				[send "text" over throu "port" over tcp/udp protocol]
+
+/etc/cron.d						[schedule task fo for later time, usefull to schedule tasks]
+
+bash ascript are shell command can be executed line by line in terminal
+
+Learn script and piping
+
+learn vi, more command
+
+git clone
+
+git log -p -l 1
+
+git branch -r
+git checkout branchname
+git log -p -1
+
+git tag
+git show tagname
+
+touch filename
+git add filename
+git commit -m "message"
+git push branchname
+
+$0
+
+bandit33
+c9c3199ddf4121b10cf581a98d51caee
